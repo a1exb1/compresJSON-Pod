@@ -7,5 +7,5 @@ end
 target 'Tests', :exclusive => true do
   pod "compresJSON-Pod", :path => "../"
 
-  pod 'FBSnapshotTestCase'
+  pod 'FBSnapshotTestCase' 
 end
