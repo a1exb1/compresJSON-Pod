@@ -13,6 +13,6 @@
 @interface Compressor : NSObject
 
 +(NSString *) compress: (NSString *) str;
-+(NSString *) compress: (NSString *) str;
++(NSString *) decompress: (NSString *) str;
 
 @end
