@@ -12,7 +12,7 @@
 
 +(NSString *) compress: (NSString *) str {
     
-    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *data = [str dataUsingEncoding:NSASCIIStringEncoding];
     
     NSError *error;
     NSData *compressedData = [data bbs_dataByDeflatingWithError:&error];
@@ -27,7 +27,7 @@
     NSError *error;
     NSData *decompressedData = [data bbs_dataByInflatingWithError:&error];
     
-    return [[NSString alloc] initWithData:decompressedData encoding:NSUTF8StringEncoding];
+    return [[NSString alloc] initWithData:decompressedData encoding:NSASCIIStringEncoding];
 }
 
 +(NSString *) base64Encode: (NSData *) data {
