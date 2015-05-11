@@ -45,6 +45,11 @@
 		CB9592DB03B4409CC8683743 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897768AB133EC7AFA47F9E8 /* FBSnapshotTestCase.m */; };
 		CCE65FD15C28646675B40B40 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 118CAF81A14B4E514316E6E2 /* NSData+Base64.m */; };
 		D9D7E56A360973AB909E1445 /* StringEncryptionBridgeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B594368FDD18D5B6F0164B8 /* StringEncryptionBridgeHelper.h */; };
+		E4E784E31B00D60600DB5390 /* CompresJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E784E11B00D60600DB5390 /* CompresJSON.swift */; };
+		E4E784E41B00D60600DB5390 /* CompresJSONSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E784E21B00D60600DB5390 /* CompresJSONSettings.swift */; };
+		E4E784E91B00D64000DB5390 /* cjson_String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E784E61B00D64000DB5390 /* cjson_String+Extension.swift */; };
+		E4E784EA1B00D64000DB5390 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E784E71B00D64000DB5390 /* Extensions.swift */; };
+		E4E784EB1B00D64000DB5390 /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E784E81B00D64000DB5390 /* NSData+Extension.swift */; };
 		ECDE6B3655F7FBD0A418D88A /* Pods-Tests-compresJSON-Pod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CD5D8497C721F5FBA681F2 /* Pods-Tests-compresJSON-Pod-dummy.m */; };
 		F22A93F2E5D7940613803911 /* Compressor.h in Headers */ = {isa = PBXBuildFile; fileRef = FD739DD130DAE6EC91380742 /* Compressor.h */; };
 		F3F9AF92D79A41455BCD38E6 /* Encryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 790DF98D3F6B262E8CAE9075 /* Encryptor.h */; };
@@ -146,6 +151,11 @@
 		DCE9DAD1B44097F9BB9012E3 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
 		E4533431E27B2A313BAF65E9 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/UIImage+Compare.h"; sourceTree = "<group>"; };
 		E461A2C8D877D894F77510AE /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		E4E784E11B00D60600DB5390 /* CompresJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompresJSON.swift; sourceTree = "<group>"; };
+		E4E784E21B00D60600DB5390 /* CompresJSONSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompresJSONSettings.swift; sourceTree = "<group>"; };
+		E4E784E61B00D64000DB5390 /* cjson_String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "cjson_String+Extension.swift"; sourceTree = "<group>"; };
+		E4E784E71B00D64000DB5390 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E4E784E81B00D64000DB5390 /* NSData+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Extension.swift"; sourceTree = "<group>"; };
 		EC27A8D7680EA43C2446F1E3 /* Compressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Compressor.m; sourceTree = "<group>"; };
 		ED9BD5DDD4A59A127D2585C3 /* Pods-compresJSON-Pod-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-compresJSON-Pod-resources.sh"; sourceTree = "<group>"; };
 		F65292576496642543E98C2C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -274,6 +284,9 @@
 		29334292A31E01E477950BF2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E4E784E51B00D64000DB5390 /* Extensions */,
+				E4E784E11B00D60600DB5390 /* CompresJSON.swift */,
+				E4E784E21B00D60600DB5390 /* CompresJSONSettings.swift */,
 				6B9B5FB32DCBCC8731DA77AB /* Compressor */,
 				F3813180D471ADC637386C5D /* Dependencies */,
 				C3FE7BCEAE4940CBC3AE778D /* Encryptor */,
@@ -429,6 +442,16 @@
 			);
 			name = "Pods-compresJSON-Pod";
 			path = "Target Support Files/Pods-compresJSON-Pod";
+			sourceTree = "<group>";
+		};
+		E4E784E51B00D64000DB5390 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4E784E61B00D64000DB5390 /* cjson_String+Extension.swift */,
+				E4E784E71B00D64000DB5390 /* Extensions.swift */,
+				E4E784E81B00D64000DB5390 /* NSData+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F3813180D471ADC637386C5D /* Dependencies */ = {
@@ -668,6 +691,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E784EB1B00D64000DB5390 /* NSData+Extension.swift in Sources */,
+				E4E784E91B00D64000DB5390 /* cjson_String+Extension.swift in Sources */,
+				E4E784EA1B00D64000DB5390 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,6 +729,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92909AC385B164A62840AD85 /* Pods-Tests-dummy.m in Sources */,
+				E4E784E41B00D60600DB5390 /* CompresJSONSettings.swift in Sources */,
+				E4E784E31B00D60600DB5390 /* CompresJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
