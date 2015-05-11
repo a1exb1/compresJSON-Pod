@@ -2,12 +2,10 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'compresJSON-Pod', :exclusive => true do
   pod "compresJSON-Pod", :path => "../"
-  use_frameworks!
 end
 
 target 'Tests', :exclusive => true do
   pod "compresJSON-Pod", :path => "../"
-  use_frameworks!
 
   pod 'FBSnapshotTestCase'
 end
