@@ -1,0 +1,17 @@
+PODS:
+  - compresJSON-Pod (0.1.0)
+  - FBSnapshotTestCase (1.8.1)
+
+DEPENDENCIES:
+  - compresJSON-Pod (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  compresJSON-Pod:
+    :path: ../
+
+SPEC CHECKSUMS:
+  compresJSON-Pod: bfb7869dced537bd2da40e0d95adeaa4ebf4bb47
+  FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
+
+COCOAPODS: 0.36.3
