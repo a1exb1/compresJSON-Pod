@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  compresJSON-Pod: bfb7869dced537bd2da40e0d95adeaa4ebf4bb47
+  compresJSON-Pod: f225ac311124816c54a66b0c2620d1ab530059ee
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
 
 COCOAPODS: 0.36.3
