@@ -9,7 +9,7 @@
     "Alex Bechmann": "alex_bechmann@hotmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/compresJSON-Pod.git",
+    "git": "https://github.com/a1exb1/compresJSON-Pod.git",
     "tag": "0.1.0"
   },
   "platforms": {
